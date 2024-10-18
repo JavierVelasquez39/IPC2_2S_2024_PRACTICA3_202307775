@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revisión de Datos Procesados</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container mx-auto mt-20 p-4">
+      <h1 class="text-3xl font-bold mb-4">Revisión de Datos Procesados</h1>
+      <pre class="bg-gray-100 p-4 rounded">{{ datos_procesados|safe }}</pre>
+    </div>
+  </body>
+</html>

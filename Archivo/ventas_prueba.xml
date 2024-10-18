@@ -1,0 +1,605 @@
+<?xml version="1.0" ?>
+<Resumen>
+    <ListadoVentas>
+        <Venta departamento="Texas">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>19/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>06/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Quiché">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>29/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>20/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Petén">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Washington">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>26/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="California">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Chimaltenango">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>06/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>01/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>28/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>06/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Florida">
+            <Fecha>06/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Petén">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Santa Rosa">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="California">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Petén">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>01/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>29/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>23/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>20/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="California">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>01/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>26/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>19/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>10/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>11/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>28/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>19/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Santa Rosa">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Arizona">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>20/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>11/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>11/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>11/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Chimaltenango">
+            <Fecha>26/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>11/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Washington">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Quiché">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>26/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="California">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Chimaltenango">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>01/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>26/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>05/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Huehuetenango">
+            <Fecha>03/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Quiché">
+            <Fecha>10/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>19/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="La Paz">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalapa">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Washington">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>28/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Petén">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Washington">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Washington">
+            <Fecha>17/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Misiones">
+            <Fecha>13/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>08/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Artibonito">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Quiché">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>04/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Izabal">
+            <Fecha>28/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Guatemala">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Petén">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>14/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>16/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Marcos">
+            <Fecha>27/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>29/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Sinaloa">
+            <Fecha>09/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="San Miguel">
+            <Fecha>22/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>18/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>12/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Texas">
+            <Fecha>31/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>21/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Alta Verapaz">
+            <Fecha>15/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Illinois">
+            <Fecha>06/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Paraguarí">
+            <Fecha>02/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Santa Rosa">
+            <Fecha>07/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jalisco">
+            <Fecha>25/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Morazán">
+            <Fecha>24/10/2024</Fecha>
+        </Venta>
+        <Venta departamento="Jutiapa">
+            <Fecha>30/10/2024</Fecha>
+        </Venta>
+    </ListadoVentas>
+</Resumen>

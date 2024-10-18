@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cargar Archivo de Registros</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="container mx-auto mt-20 p-4">
+      <h1 class="text-3xl font-bold mb-4">Cargar Archivo de Registros</h1>
+      <form action="{% url 'cargar_archivo' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Cargar</button>
+      </form>
+      {% if ventas_validas %}
+        <h2 class="text-2xl font-bold mt-8">Ventas Válidas</h2>
+        <ul>
+          {% for venta in ventas_validas %}
+            <li>{{ venta.departamento }} - {{ venta.fecha }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if ventas_invalidas %}
+        <h2 class="text-2xl font-bold mt-8">Ventas Inválidas</h2>
+        <ul>
+          {% for venta in ventas_invalidas %}
+            <li>{{ venta.departamento }} - {{ venta.fecha }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </body>
+</html>
