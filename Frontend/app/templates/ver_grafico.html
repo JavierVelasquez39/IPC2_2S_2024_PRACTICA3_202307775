@@ -3,32 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Revisión de Datos Procesados</title>
+    <title>Gráfico de Ventas por Departamento</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
-  <body>
+  <body class="bg-gray-100">
     {% include 'navbar.html' %}
     <div class="container mx-auto mt-20 p-4">
-      <h1 class="text-3xl font-bold mb-4">Revisión de Datos Procesados</h1>
-      <button onclick="revisarDatos()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">Revisar Datos</button>
-      <textarea id="resultados" class="w-full h-96 p-4 bg-gray-100 rounded" readonly></textarea>
-      <h2 class="text-2xl font-bold mt-8">Gráfico de Ventas por Departamento</h2>
-      <canvas id="graficoVentas" class="w-full h-96"></canvas>
+      <div class="bg-white p-8 shadow-2xl rounded-lg">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">Gráfico de Ventas por Departamento</h1>
+        <h2 class="text-2xl font-bold mt-8 text-gray-700">Gráfico de Ventas por Departamento</h2>
+        <canvas id="graficoVentas" class="w-full h-96"></canvas>
+      </div>
     </div>
 
     <script>
-      function revisarDatos() {
-        fetch('http://127.0.0.1:5000/config/obtenerVentasXML')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('resultados').value = data;
-          })
-          .catch(error => console.error('Error:', error));
-      }
-
       function generarGrafico() {
         fetch('http://127.0.0.1:5000/config/obtenerDatosGrafico')
           .then(response => response.json())

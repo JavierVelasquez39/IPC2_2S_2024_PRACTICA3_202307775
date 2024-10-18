@@ -8,31 +8,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CDN -->
   </head>
-  <body>
+  <body class="bg-gray-100">
     {% include 'navbar.html' %}
     <div class="container mx-auto mt-20 p-4">
-      <h1 class="text-3xl font-bold mb-4">Cargar Archivo de Registros</h1>
-      <form action="{% url 'cargar_archivo' %}" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Cargar</button>
-      </form>
-      {% if ventas_validas %}
-        <h2 class="text-2xl font-bold mt-8">Ventas Válidas</h2>
-        <ul>
-          {% for venta in ventas_validas %}
-            <li>{{ venta.departamento }} - {{ venta.fecha }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-      {% if ventas_invalidas %}
-        <h2 class="text-2xl font-bold mt-8">Ventas Inválidas</h2>
-        <ul>
-          {% for venta in ventas_invalidas %}
-            <li>{{ venta.departamento }} - {{ venta.fecha }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <div class="bg-white p-8 shadow-2xl rounded-lg">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">Cargar Archivo de Registros</h1>
+        <form action="{% url 'cargar_archivo' %}" method="post" enctype="multipart/form-data" class="space-y-4">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Cargar</button>
+        </form>
+        {% if ventas_validas %}
+          <h2 class="text-2xl font-bold mt-8 text-green-600">Ventas Válidas</h2>
+          <ul class="list-disc list-inside bg-green-50 p-4 rounded-lg">
+            {% for venta in ventas_validas %}
+              <li class="text-gray-700">{{ venta.departamento }} - {{ venta.fecha }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if ventas_invalidas %}
+          <h2 class="text-2xl font-bold mt-8 text-red-600">Ventas Inválidas</h2>
+          <ul class="list-disc list-inside bg-red-50 p-4 rounded-lg">
+            {% for venta in ventas_invalidas %}
+              <li class="text-gray-700">{{ venta.departamento }} - {{ venta.fecha }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
     </div>
   </body>
 </html>

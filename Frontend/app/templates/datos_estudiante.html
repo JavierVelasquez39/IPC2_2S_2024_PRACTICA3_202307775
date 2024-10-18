@@ -6,14 +6,19 @@
     <title>Datos del Estudiante</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CDN -->
   </head>
-  <body>
+  <body class="bg-gray-100">
     {% include 'navbar.html' %}
     <div class="container mx-auto mt-20 p-4">
-      <h1 class="text-3xl font-bold mb-4">Datos del Estudiante</h1>
-      <p><strong>Nombre Completo:</strong> Javier Andrés Velásquez Bonilla</p>
-      <p><strong>Carnet:</strong> 202307775 </p>
+      <div class="bg-white p-8 shadow-2xl rounded-lg">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">Datos del Estudiante</h1>
+        <p class="text-gray-700"><strong>Nombre Completo:</strong> Javier Andrés Velásquez Bonilla</p>
+        <p class="text-gray-700"><strong>Carnet:</strong> 202307775</p>
+        <p class="text-gray-700"><strong>Carrera:</strong> Ingeniería en Ciencias y Sistemas</p>
+        <p class="text-gray-700"><strong>Curso:</strong> Introducción a la Programación y Computación 2</p>
+        <p class="text-gray-700"><strong>Sección:</strong> A</p>
+        <p class="text-gray-700"><strong>Auxiliar:</strong> Andrea Cabrera</p>
+      </div>
     </div>
   </body>
 </html>
