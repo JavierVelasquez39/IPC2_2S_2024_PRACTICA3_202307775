@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
 import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 import re
 
 #  Flask App
@@ -36,6 +37,7 @@ def api():
 @app.route('/config/postXML', methods=['POST'])
 def postXML():
     data = request.get_data()
+    print("Datos recibidos:", data)  # Log para verificar los datos recibidos
     root = ET.fromstring(data)
 
     # Procesar ventas del XML
@@ -51,10 +53,11 @@ def postXML():
             if fecha_valida:
                 venta_obj = Venta(departamento, fecha_valida.group(), 1)  # Cantidad fija a 1
                 listadoVentas.append(venta_obj)
+                print("Venta agregada:", venta_obj.__dict__)  # Log para verificar las ventas agregadas
             else:
-                return jsonify({'message': f'Error en la fecha: {fecha}'})
+                print(f'Error en la fecha: {fecha}')  # Log para errores en la fecha
         else:
-            return jsonify({'message': f'Departamento inválido: {departamento}'})
+            print(f'Departamento inválido: {departamento}')  # Log para departamentos inválidos
 
     return jsonify({'message': 'XML procesado correctamente'})
 
@@ -67,23 +70,35 @@ def getVentas():
             'fecha': venta.fecha,
             'cantidad': venta.cantidad
         })
-
+    print("Ventas devueltas:", ventas)  # Log para verificar las ventas devueltas
     return jsonify({'ventas': ventas})
 
 @app.route('/config/obtenerVentasXML', methods=['GET'])
 def getVentasXML():
-    root = ET.Element("Ventas")
-    for venta in listadoVentas:
-        venta_elem = ET.SubElement(root, "Venta")
-        departamento_elem = ET.SubElement(venta_elem, "Departamento")
-        departamento_elem.text = venta.departamento
-        fecha_elem = ET.SubElement(venta_elem, "Fecha")
-        fecha_elem.text = venta.fecha
-        cantidad_elem = ET.SubElement(venta_elem, "Cantidad")
-        cantidad_elem.text = str(venta.cantidad)
+    root = ET.Element("resultados")
+    departamentos_elem = ET.SubElement(root, "departamentos")
+    ventas_por_departamento = {}
 
+    # Contar ventas por departamento
+    for venta in listadoVentas:
+        if venta.departamento in ventas_por_departamento:
+            ventas_por_departamento[venta.departamento] += venta.cantidad
+        else:
+            ventas_por_departamento[venta.departamento] = venta.cantidad
+
+    # Crear XML solo con departamentos que tienen ventas
+    for departamento, cantidad in ventas_por_departamento.items():
+        if cantidad > 0:
+            departamento_elem = ET.SubElement(departamentos_elem, departamento.replace(" ", ""))
+            cantidad_elem = ET.SubElement(departamento_elem, "cantidadVentas")
+            cantidad_elem.text = str(cantidad)
+
+    # Prettify XML usando minidom
     xml_str = ET.tostring(root, encoding='utf-8', method='xml')
-    return Response(xml_str, mimetype='application/xml')
+    dom = minidom.parseString(xml_str)
+    pretty_xml_str = dom.toprettyxml(indent="  ")
+
+    return Response(pretty_xml_str, mimetype='application/xml')
 
 @app.route('/config/obtenerVentasPorDepartamento/<departamento>', methods=['GET'])
 def getVentasPorDepartamento(departamento):
@@ -96,6 +111,7 @@ def getVentasPorDepartamento(departamento):
     ]
 
     if ventas_departamento:
+        print("Ventas por departamento devueltas:", ventas_departamento)  # Log para verificar las ventas por departamento
         return jsonify({'ventas': ventas_departamento})
     else:
         return jsonify({'message': f'No hay ventas registradas para el departamento: {departamento}'})
@@ -103,7 +119,25 @@ def getVentasPorDepartamento(departamento):
 @app.route('/config/limpiarDatos', methods=['GET'])
 def limpiarDatos():
     listadoVentas.clear()
+    print("Datos de ventas limpiados")  # Log para verificar la limpieza de datos
     return jsonify({'message': 'Datos de ventas limpiados'})
+
+@app.route('/config/obtenerDatosGrafico', methods=['GET'])
+def obtenerDatosGrafico():
+    ventas_por_departamento = {}
+
+    # Contar ventas por departamento
+    for venta in listadoVentas:
+        if venta.departamento in ventas_por_departamento:
+            ventas_por_departamento[venta.departamento] += venta.cantidad
+        else:
+            ventas_por_departamento[venta.departamento] = venta.cantidad
+
+    # Crear una lista de datos para el gráfico
+    datos_grafico = [{'departamento': departamento, 'cantidad': cantidad}
+                     for departamento, cantidad in ventas_por_departamento.items() if cantidad > 0]
+
+    return jsonify(datos_grafico)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

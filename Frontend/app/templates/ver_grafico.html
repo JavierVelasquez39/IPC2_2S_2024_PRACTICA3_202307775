@@ -3,42 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ver Gráfico</title>
+    <title>Revisión de Datos Procesados</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CDN -->
+    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     {% include 'navbar.html' %}
     <div class="container mx-auto mt-20 p-4">
-      <h1 class="text-3xl font-bold mb-4">Gráfico de Ventas</h1>
-      <canvas id="ventasChart"></canvas>
+      <h1 class="text-3xl font-bold mb-4">Revisión de Datos Procesados</h1>
+      <button onclick="revisarDatos()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">Revisar Datos</button>
+      <textarea id="resultados" class="w-full h-96 p-4 bg-gray-100 rounded" readonly></textarea>
+      <h2 class="text-2xl font-bold mt-8">Gráfico de Ventas por Departamento</h2>
+      <canvas id="graficoVentas" class="w-full h-96"></canvas>
     </div>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var ctx = document.getElementById('ventasChart').getContext('2d');
-        var ventasChart = new Chart(ctx, {
-          type: 'bar', // Cambia a 'pie' si prefieres un gráfico de pastel
-          data: {
-            labels: JSON.parse('{{ labels|escapejs }}'),
-            datasets: [{
-              label: 'Ventas por Departamento',
-              data: JSON.parse('{{ data|escapejs }}'),
-              backgroundColor: 'rgba(54, 162, 235, 0.2)',
-              borderColor: 'rgba(54, 162, 235, 1)',
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
+      function revisarDatos() {
+        fetch('http://127.0.0.1:5000/config/obtenerVentasXML')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('resultados').value = data;
+          })
+          .catch(error => console.error('Error:', error));
+      }
+
+      function generarGrafico() {
+        fetch('http://127.0.0.1:5000/config/obtenerDatosGrafico')
+          .then(response => response.json())
+          .then(data => {
+            const ctx = document.getElementById('graficoVentas').getContext('2d');
+            const labels = data.map(item => item.departamento);
+            const cantidades = data.map(item => item.cantidad);
+
+            new Chart(ctx, {
+              type: 'bar', // Cambia a 'pie' para un gráfico de pastel
+              data: {
+                labels: labels,
+                datasets: [{
+                  label: 'Cantidad de Ventas',
+                  data: cantidades,
+                  backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                  borderColor: 'rgba(54, 162, 235, 1)',
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
               }
-            }
-          }
-        });
-      });
+            });
+          })
+          .catch(error => console.error('Error:', error));
+      }
+
+      // Generar el gráfico al cargar la página
+      window.onload = generarGrafico;
     </script>
   </body>
 </html>
